@@ -1,0 +1,9 @@
+from datetime import datetime
+
+aniver = datetime.strptime (input('Qual é a data do seu próximo aniversário?'),'%d/%m/%Y')
+
+hoje = datetime.now()
+dias_ate_o_niver = aniver - hoje
+
+print ('Para o seu aniversário faltam:')
+print (dias_ate_o_niver)
